@@ -74,12 +74,12 @@ function createCountDown() {
   let id = `cancel-${clicks}`
   cancelBtn.setAttribute('id', id)
   cancelBtn.innerHTML = 'Cancel'
-  let algo = new CountDown()
-  cancelBtn.addEventListener('click', function (e) { algo.cancel(e, id) }, false)
+  let countDownObject = new CountDown()
+  cancelBtn.addEventListener('click', function (e) { countDownObject.cancel(e, id) }, false)
   newCountDown.appendChild(cancelBtn)
 
   document.getElementById('results').appendChild(newCountDown)
-  algo.start(countDownDate, timerId)
+  countDownObject.start(countDownDate, timerId)
 }
 
 
