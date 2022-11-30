@@ -1,0 +1,20 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+}
+
+.container {
+    max-width: 30vw;
+    min-height: 50vh;
+    background-color: aquamarine;
+    margin: 20px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
