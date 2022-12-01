@@ -1,6 +1,7 @@
 class CountDown {
 
   cancel(e, id) {
+
     document.getElementById(id).parentElement.remove()
   }
 
@@ -63,6 +64,7 @@ function createCountDown() {
 
   let countDownDate = new Date()
   countDownDate.setHours(hours, minutes, seconds)
+  console.log(countDownDate)
 
   let timer = document.createElement('span')
   let timerId = `timer-${clicks}`

@@ -1,0 +1,36 @@
+Selectors:
+
+HTMLCollection
+.getElementById()
+.getElementsByTagName()[0]
+.getElementsByClassName()
+
+NodeList
+.querySelector("element", ".class", "#id", "div[foo='bar'] /*attribute*/)
+.querySekectirAll() >>> NOT LIVE
+
+// change css
+/HTMLCollection
+document.getElementById("p2").style.color = "blue";
+
+/CSS
+const el = document.querySelector("div")
+el.style.opacity = 0.5
+el.style.transition = "opacity 0.5s linear 0s"
+
+Edit Document:
+
+ADD:
+.appendChild()  // .insertBefore(newElement, childAfterNewElement)
+
+DELETE:
+.remove()  // parent.removeChild(child)
+
+UPDATE:
+parent.repalceChild(para, child)
+
+The page finishes loading
+addEventListener("load", (event) => {}); // onload = (event) => {};
+
+An image finishes loading:
+img.complete?

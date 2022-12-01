@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Task 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GUESS THE CAPITAL</h1>
+        <div class="tries">Number of tries: <span id="numberTries">10</span></div>
+        <h2 id="country__name"></h2>
+        <div class="country__capitals"></div>
+        
+    </div>
+    <template id="temSubmitName">
+        <form>
+            <label for="userName"> Please, enter your name for the ranking</label>
+            <input type="text" id="userName" name= "userName" placeholder="Your name">
+            <button type="submit">Accept</button>
+        </form>
+    </template>
+    <!-- <script type="module" src="js/country-by-capital-city.json"></script> -->
+    <script type="module" src="js/main.js"></script>    
+</body>
+</html>
