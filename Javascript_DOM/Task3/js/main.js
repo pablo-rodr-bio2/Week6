@@ -27,15 +27,10 @@ movies.map(movie => {
     const divInfo = document.createElement('div')
     divInfo.classList.add('movie__info')
 
-    // add year 
-    const divYear = document.createElement('div')
-    divYear.textContent = year
-    divInfo.appendChild(divYear)
-
-    //add genres
-    const divGenres = document.createElement('div')
-    divGenres.textContent = genres
-    divInfo.appendChild(divGenres)
+    // add year and genres
+    const divYearGenres = document.createElement('div')
+    divYearGenres.textContent = year + " · " + genres
+    divInfo.appendChild(divYearGenres)
 
     // add title
     const divTitle = document.createElement('h4')
