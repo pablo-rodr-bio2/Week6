@@ -2,6 +2,8 @@
 
 import data from './country-by-capital-city.json' assert { type: 'json' };
 
+"use strict";
+
 // set initial names for ranking
 const names = [["Pablo", 2], ["John Doe", 4], ["Tien", 6], ["Garth Marenghi", 10]]
 sessionStorage.setItem("names", JSON.stringify(names))
@@ -14,7 +16,7 @@ let tries = 10
 let points = 0
 
 let solution = startRound()
-console.log(solution)
+// console.log(solution)
 
 document.getElementById('numberTries').textContent = tries
 
@@ -31,7 +33,7 @@ document.querySelector(".country__capitals").addEventListener('click', event => 
             askName()
         } else {
             solution = startRound(tries)
-            console.log(solution)
+            // console.log(solution)
             document.getElementById('numberTries').textContent = tries
         }
 
@@ -107,6 +109,7 @@ function showRanking(event) {
 
     let rankingNames = JSON.parse(sessionStorage.getItem("names"))
     rankingNames.push([name, points])
+    sessionStorage.setItem("names", JSON.stringify(rankingNames))
 
     rankingNames.forEach(name => {
         const li = document.createElement('div');
